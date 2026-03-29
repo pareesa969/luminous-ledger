@@ -96,21 +96,6 @@ Users learn financial literacy by **playing through life scenarios**.
 
 ---
 
-# 🎥 Demo (Video Link)
-
-Add your demo video here:
-
-```
-https://your-demo-video-link.com
-```
-
-Example:
-
-* Loom recording
-* YouTube demo
-* Screen recording
-
----
 
 # 📸 Screenshots
 
