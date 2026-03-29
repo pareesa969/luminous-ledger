@@ -134,7 +134,7 @@ Add screenshot here
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/luminous-ledger.git
+git clone https://github.com/pareesa969/luminous-ledger.git
 ```
 
 ---
