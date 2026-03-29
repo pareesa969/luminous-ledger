@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-background: #111318;
+  --color-surface: #111318;
+  --color-surface-container: #1e2024;
+  --color-surface-container-low: #1a1c20;
+  --color-surface-container-high: #282a2e;
+  --color-surface-container-highest: #333539;
+  --color-surface-container-lowest: #0c0e12;
+  --color-surface-bright: #37393e;
+  
+  --color-primary: #00e475;
+  --color-on-primary: #003918;
+  --color-primary-container: #001204;
+  
+  --color-secondary: #b0c6ff;
+  --color-secondary-container: #0068ed;
+  
+  --color-tertiary: #ffb3b3;
+  --color-tertiary-container: #270003;
+  
+  --color-on-surface: #e2e2e8;
+  --color-on-surface-variant: #c6c6cb;
+  --color-outline: #8f9095;
+  --color-outline-variant: #45474b;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface antialiased selection:bg-primary/30 selection:text-primary;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface-container/60 backdrop-blur-xl border-t border-l border-outline-variant/30;
+  }
+  
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(0, 228, 117, 0.15);
+  }
+  
+  .bg-grid {
+    background-image: linear-gradient(to right, rgba(69, 71, 75, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(69, 71, 75, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
